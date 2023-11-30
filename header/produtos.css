@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+body {
+    width: 100%;
+    background-color: #383737;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerProdutoPai {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerProduto {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #082246;
+}
+
+
+.containerImagem {
+    width: 100%;
+    height:60%;
+}
+
+.containerInfosProduto {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.containerImagem img {
+    width: 100%;
+    height: 100%;
+}
+
