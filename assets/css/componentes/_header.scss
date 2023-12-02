@@ -1,0 +1,47 @@
+header {
+    background: $cor-primaria;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    .logo {
+        width: 20vw;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        a {
+            font-size: 1.5em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease-in;
+            &:hover {
+                color: rgba($color: #fff, $alpha: .75);
+            }
+            img {
+                width: 3vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            width: 60vw;
+        }
+        div {
+            flex-wrap: wrap;
+            a {
+                img {
+                    width: 10vw;
+                }
+            }
+        }
+    }
+}

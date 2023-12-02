@@ -1,0 +1,14 @@
+@import './abstract/base';
+@import './componentes/header';
+@import './componentes/secao-produtos';
+@import './componentes/sobrenos';
+@import './componentes/compra-produtos';
+
+
+body {
+    font-family: $fonte-principal;
+}
+
+main {
+    margin-bottom: 10vh;
+}

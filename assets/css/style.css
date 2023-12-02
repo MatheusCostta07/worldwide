@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+header {
+  background: #020D69;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+}
+header .logo {
+  width: 20vw;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+header div a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+header div a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+header div a img {
+  width: 3vw;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    width: 60vw;
+  }
+  header div {
+    flex-wrap: wrap;
+  }
+  header div a img {
+    width: 10vw;
+  }
+}
+.card_desconto {
+  background: #020D69;
+  color: #fff;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5vh auto;
+  border-radius: 8px;
+}
+.card_desconto .div_card_text {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+.card_desconto .div_card_text button {
+  margin-top: 18px;
+  font-size: 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 12px;
+  background: #fff;
+  color: #020D69;
+  cursor: pointer;
+  font-weight: 800;
+  border: none;
+  border-radius: 24px;
+}
+.card_desconto .div_card_text button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.card_desconto .div_card_text button:active {
+  transform: scale(0.95);
+}
+
+article {
+  margin: 5vh 0 5vh 5vw;
+}
+article h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #020D69;
+}
+article .produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+article .produtos .itens {
+  padding: 1em;
+  text-decoration: none;
+}
+article .produtos .itens .item_img {
+  padding: 32px;
+  border-radius: 25%;
+  background: #020D69;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.2s ease-in;
+  margin-bottom: 16px;
+}
+article .produtos .itens .item_img img {
+  width: 10vw;
+}
+article .produtos .itens .item_img:hover {
+  border-radius: 50%;
+}
+article .produtos .itens p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #020D69;
+}
+
+@media (max-width: 768px) {
+  .card_desconto {
+    width: 90vw;
+    position: relative;
+    z-index: 2;
+    min-height: 25vh;
+  }
+  .card_desconto .div_card_text {
+    position: relative;
+    z-index: 3;
+    width: auto;
+    padding: 0 12px;
+    text-align: center;
+  }
+  .card_desconto .div_card_text button {
+    font-size: 0.8em;
+  }
+  .card_desconto img {
+    z-index: 1;
+    opacity: 0.44;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  article .produtos {
+    gap: 1em;
+    justify-content: unset;
+  }
+  article .produtos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  article .produtos .itens {
+    width: 35vw;
+  }
+  article .produtos .itens .item_img {
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  article .produtos .itens .item_img img {
+    width: 25vw;
+  }
+}
+.info {
+  margin-top: 5vh;
+}
+.info h2 {
+  font-size: 3em;
+  margin: 10vh 5vw 2vh;
+  border-top: 2px solid #020D69;
+  padding-top: 1em;
+}
+.info div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.info div .flex-column {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.info div p {
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  width: 50vw;
+}
+.info div ul {
+  list-style: disc;
+  margin-left: 1.2vw;
+}
+.info div ul li {
+  margin: 4px 0;
+}
+.info div img {
+  width: 20vw;
+}
+
+h1 {
+  margin: 10vh 0 3vh 8vw;
+  font-size: 3em;
+  color: #020D69;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cards .itens {
+  margin-top: 24px;
+  border: 2px solid #020D69;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #020D69;
+  font-weight: 600;
+}
+.cards .itens img {
+  width: 450px;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 24px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin-bottom: 10vh;
+}/*# sourceMappingURL=style.css.map */

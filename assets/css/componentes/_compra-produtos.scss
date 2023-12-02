@@ -1,0 +1,30 @@
+
+h1 {
+    margin: 10vh 0 3vh 8vw;
+    font-size: 3em;
+    color: $cor-primaria;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    .itens {
+        margin-top:24px;
+        border: 2px solid $cor-primaria;
+        border-radius: 12px;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: $cor-primaria;
+        font-weight: 600;
+        img {
+            width: 450px;
+            height: 450px;
+            object-fit: contain;
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -1,90 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header/header.css">
-    <title>Home</title>
+    <title>World Wide</title>
+    <link rel="shortcut icon" href="assets/imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
     <header>
-        <div class="logoContainer">
-            <a href="/index.html"><img src="./imagens/novalogo.png" alt="logo"></a>
+        <a href="#">
+            <img src="assets/imagens/novalogo.png" class="logo" alt="Logo">
+        </a>
+        <div>
+            <a href="#">Home</a>
+            <a href="html/sobre-nos.html">Sobre nós</a>
+            <a href="https://www.instagram.com/world_wide_2024/" target="_blank">
+                <img src="assets/imagens/instagram.png" alt="">
+            </a>
         </div>
-
-        <nav>
-            <a href="./sobrenos/sobrenos.html">Sobre nós</a>
-
-            <a href="#">Feedback</a>
-
-            <a href="https://www.instagram.com/world_wide_2024/">
-                <img src="imagens/instagram.png" alt="insta">
-            </a> 
-        </nav>
     </header>
-
-    <div class="containerTitulo">
-        <h1>Produtos</h1>
-    </div>
-
     <main>
-        <div class="containerProduto">
-            <div class="containerImagem">
-                <a href="./camisa/camisa.html"><img src="imagens/camisetaNova.png" alt="camiseta"></a>
+        <section class="secao_produtos">
+            <div class="card_desconto">
+                <div class="div_card_text">
+                    <h4>Use o cupom “WW2024” para 25% de desconto</h4>
+                    <a href="">
+                        <button>Compre Agora</button>
+                    </a>
+                </div>
+                <div class="div_card_img">
+                    <img src="assets/imagens/bannerImage.svg" alt="">
+                </div>
             </div>
 
-            <div class="containerNome">
-                <h1>Camisetas</h1>
-            </div>
-        </div>
-
-        <div class="containerProduto">
-            <div class="containerImagem">
-                <a href="./moletons/moletons.html"><img src="imagens/moletomNovo.png" alt="camiseta"></a>
-            </div>
-
-            <div class="containerNome">
-                <h1>Moletons</h1>
-            </div>
-        </div>
-
-
-        <div class="containerProduto">
-            <div class="containerImagem">
-                <a href="./calças/calças.html"><img class="calça" src="imagens/calça.png" alt="camiseta"></a>
-            </div>
-
-            <div class="containerNome">
-                <h1>Calças</h1>
-            </div>
-        </div>
-
-
-        <div class="containerProduto">
-            <div class="containerImagem">
-                <a href="./Shorts/shorts.html"> <img src="imagens/shorts.png" alt="camiseta"></a>
-            </div>
-
-            <div class="containerNome">
-                <h1>Shorts</h1>
-            </div>
-        </div>
+            <article>
+                <h2>Produtos</h2>
+                <div class="produtos">
+                    <a href="html/camisas.html" class="itens">
+                        <div>
+                            <div class="item_img">
+                                <img src="assets/imagens/camisetaNova.png" alt="">
+                            </div>
+                            <p>Camisetas</p>
+                        </div>
+                    </a>
+                    <a href="html/moletons.html" class="itens">
+                        <div>
+                            <div class="item_img">
+                                <img src="assets/imagens/moletomNovo.png" alt="">
+                            </div>
+                            <p>Moletons</p>
+                        </div>
+                    </a>
+                    <a href="html/shorts.html" class="itens">
+                        <div>
+                            <div class="item_img">
+                                <img src="assets/imagens/shorts.png" alt="">
+                            </div>
+                            <p>Shorts</p>
+                        </div>
+                    </a>
+                    <a href="html/calcas.html" class="itens">
+                        <div>
+                            <div class="item_img">
+                                <img src="assets/imagens/calça.png" alt="">
+                            </div>
+                            <p>Calças</p>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
     </main>
-
-    <div class="containerPromo">
-        <h1>Promoção:</h1>
-    </div>
-
-    <div class="containerImagemPromo">
-        <img src="./imagens/promoImagem.jpg" alt="promoImagem">
-    </div>
-
-    <footer>
-
-    </footer>
 </body>
-
 </html>
